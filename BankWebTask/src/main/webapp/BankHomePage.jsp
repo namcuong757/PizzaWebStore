@@ -61,8 +61,7 @@ td {
 	String name, address, phoneNumber;
 	%>
 	<%
-	//String user = request.getParameter("username");
-	String user = "user01";
+	String user = request.getParameter("username");
 	try {
 	    Class.forName("com.mysql.cj.jdbc.Driver");
 	    String url = "jdbc:mysql://localhost:3306/testDB?useSSL=false";
@@ -111,13 +110,17 @@ td {
 				<h2 class="card-title">Account Display</h2>
 				<h3 class="card-subtitle mb-3 text-muted">Successfully Update
 					DB</h3>
-				<form action="Eregister.jsp" method="post">
+				<form action="ReportServlet" method="post">
 					<table class="table text-center">
 						<tr>
 							<td>Your account balance: <%= balance %></td>
 						</tr>
 					</table>
-					<input type="submit" value="Admin"
+					<input type="submit" name="action" value="Report By Day"
+								class="btn btn-primary">
+					<input type="submit" name="action" value="Report By Month"
+								class="btn btn-primary">
+					<input type="submit" name="action" value="Report By Year"
 								class="btn btn-primary">
 				</form>
 			</div>
