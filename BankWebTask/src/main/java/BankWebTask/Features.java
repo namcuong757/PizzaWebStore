@@ -1,3 +1,4 @@
+package BankWebTask;
 
 public interface Features {
 	void user_check();

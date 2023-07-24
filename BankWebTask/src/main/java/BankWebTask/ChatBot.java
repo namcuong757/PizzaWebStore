@@ -1,3 +1,4 @@
+package BankWebTask;
 
 import java.util.Scanner;
 

@@ -1,3 +1,5 @@
+package BankWebTask;
+
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,8 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LoginServelet
  */
-@WebServlet("/LoginServelet")
-public class LoginServelet extends HttpServlet {
+@WebServlet("/AdminLoginServelet")
+public class AdminLoginServelet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private ConfigInterface config = new Config();
     private Connection con = config.config();
@@ -24,7 +26,7 @@ public class LoginServelet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginServelet() {
+    public AdminLoginServelet() {
         super();
     }
 
@@ -39,22 +41,22 @@ public class LoginServelet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String user = request.getParameter("username");
+		String admin = request.getParameter("adminUserName");
 		String password = request.getParameter("password");
-		String userDb = null, passwordDb = null;
-		String user_query = "Select user,password from logIn;";
+		String adminDb = null, passwordDb = null;
+		String user_query = "Select admin,password from adminLogIn;";
 		try 
 		{
 			prepare = con.prepareStatement(user_query);
 			rs = prepare.executeQuery();
 			while(rs.next())
 			{
-				userDb = rs.getString("user");
+				adminDb = rs.getString("user");
 				passwordDb = rs.getString("password");
 
-				if(user.equals(userDb) && password.equals(passwordDb))
+				if(admin.equals(adminDb) && password.equals(passwordDb))
 				{
-					response.sendRedirect("http://localhost:8080/Whasapps/Eregister.jsp");
+					response.sendRedirect("http://localhost:8080/Whasapps/Eregister.");
 					break;
 				}
 			}
