@@ -1,0 +1,38 @@
+<div class="container mt-5" id="box">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card shadow-sm">
+          <img src="https://i.pinimg.com/236x/d6/cd/f2/d6cdf2a5daaf96462127cc31fb621851.jpg" class="card-img-top img-fluid rounded-circle" alt="Admin Picture">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ admin.name }}</h5>
+            <p class="card-text text-muted">{{ admin.role }}</p>
+            <button (click)="updateAdmin()" class="btn btn-primary">Edit Profile</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Profile Details</h5>
+            <hr>
+            <div class="row">
+              <div class="col-md-3"><strong>Admin ID:</strong></div>
+              <div class="col-md-9">{{ admin.adminID }}</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-3"><strong>Email:</strong></div>
+              <div class="col-md-9">{{ admin.email }}</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-3"><strong>Role:</strong></div>
+              <div class="col-md-9">{{ admin.role }}</div>
+            </div>
+            <div class="row mt-3 d-flex justify-content-center">
+              <button (click)="viewOrderHistory()" class="btn btn-info" style="width: auto;" >View Order History</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

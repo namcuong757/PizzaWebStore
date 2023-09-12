@@ -1,0 +1,11 @@
+img{
+    width: 100px;     /* You can set the width */
+    height: 100px;    /* and the height */
+    margin-right: auto; /* Add some space between the icon and the text */
+    margin-left: auto;
+    margin-top: 20px;
+}
+#box{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}

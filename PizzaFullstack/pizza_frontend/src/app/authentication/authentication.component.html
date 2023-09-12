@@ -1,0 +1,20 @@
+    
+	<div class="container" id="box">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-6 col-lg-4 text-center border">
+				<!-- Your login form or content here -->
+				<h2 class="mb-5 mt-4">Admin Login</h2>
+				<form (ngSubmit) = "onSubmit()">
+					<div class="mb-3">
+						<label for="username" class="form-label">AdminID</label> <input
+							type="text" class="form-control" name="username" id="username" [(ngModel)]="admin.adminID" required>
+					</div>
+					<div class="mb-3">
+						<label for="password" class="form-label">Password</label> <input
+							type="password" class="form-control" name="password" id="password" [(ngModel)]="admin.password" required>
+					</div>
+					<button type="submit" class="btn btn-primary mb-4">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>

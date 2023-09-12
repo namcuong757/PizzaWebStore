@@ -1,0 +1,32 @@
+<!-- Pizza Menu Table -->
+
+<div class="container mt-05" id="box">
+    <h1 class="text-center" id="list-title">PIZZA ORDERS</h1>
+    <table class="table table-striped" aria-describedby="pizzaMenuDescription">
+        <caption id="pizzaMenuDescription" class="sr-only">This table displays the pizza orders taken by specific admin</caption>
+        <thead>
+            <tr>
+                <!-- Column Headers -->
+                <th scope="col">Pizza Variety</th>
+                <th scope="col">Accompanying Side</th>
+                <th scope="col">Beverage Option</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Server</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through pizzas array and display each pizza's details -->
+            <tr *ngFor="let pizza of pizzas">
+                <td>{{pizza.type}}</td>
+                <td>{{pizza.side}}</td>
+                <td>{{pizza.drink}}</td>
+                <td>{{pizza.cust_name}}</td>
+                <td>{{pizza.server}}</td>
+                <td><button (click)="updatePizza(pizza.pid)"  class="btn btn-info">Update</button></td>
+                <td><button (click)="deletePizza(pizza.pid)"  class="btn btn-warning">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

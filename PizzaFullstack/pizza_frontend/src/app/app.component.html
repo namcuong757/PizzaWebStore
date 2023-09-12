@@ -1,0 +1,77 @@
+<html>
+  <body>
+    <div class="content">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-05">
+        <!-- ... -->
+        <h1 id="title">Pittsa</h1>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" (click)="authService.logout()">
+                <img src="https://cdn-icons-png.flaticon.com/512/6978/6978255.png" alt="" class="icon-image">
+              </a>
+            </li>
+            <!-- Show when user is not logged in -->
+            <li class="nav-item" *ngIf="!authService.isLoggedIn()">
+              <a routerLink="authentication" routerLinkActive="active" class="nav-link">Log In</a>
+            </li>
+            <li class="nav-item" *ngIf="!authService.isLoggedIn()">
+              <a routerLink="create-admin" routerLinkActive="active" class="nav-link">Register</a>
+            </li>
+            <!-- Show when user is logged in -->
+            <li class="nav-item" *ngIf="authService.isLoggedIn()">
+              <a routerLink="pizzas" routerLinkActive="active" class="nav-link">Pizza List</a>
+            </li>
+            <li class="nav-item" *ngIf="authService.isLoggedIn()">
+              <a routerLink="create-pizza" routerLinkActive="active" class="nav-link">New Order</a>
+            </li>
+            <li class="nav-item" *ngIf="authService.isLoggedIn()">
+              <a routerLink="view-profile" routerLinkActive="active" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item" *ngIf="authService.isLoggedIn()">
+              <a (click)="authService.logout()" class="nav-link">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="background" *ngIf="!authService.isLoggingIn()">
+        <h1 id="sub-title">are you ready to</h1>
+        <h1 id="sub-title">Taste The Differences?</h1>
+      </div>
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <h5>About Us</h5>
+                  <p>Celebrating 10 years of crafting authentic, hand-tossed pizzas. A family-owned gem, we're passionate about quality, community, and the perfect slice. Enjoy!</p>
+              </div>
+              <div class="col-md-4">
+                  <h5>Contact</h5>
+                  <ul>
+                      <li><a href="#">Twitter</a></li>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">LinkedIn</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <h5>More Links</h5>
+                  <ul>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms of Use</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row copyright">
+              <div class="col-md-12 text-center">
+                  <p>&copy; 2023 Pizza Place. All rights reserved.</p>
+              </div>
+          </div>
+      </div>
+    </footer>  
+  </body>  
+</html>
