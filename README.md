@@ -22,7 +22,7 @@ Welcome to the Pizza Point-of-Sale System. Manage orders, view, manage admin dat
   
 ## Technology Stack 🛠
 
-- **Front-end:** Angular with TypeScript crafts our beautiful and responsive UI.
+- **Front-end:** Angular with TypeScript, HTML, CSS(Boostrap5) crafts our beautiful and responsive UI.
 - **Back-end:** The power combo of Java core and Spring Boot ensures our backend is robust and scalable.
 - **Build Tool:** Maven manages our project's build lifecycle.
 - **Testing:** JUnit ensures our code always runs smoothly.
