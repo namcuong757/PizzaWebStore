@@ -40,7 +40,7 @@ Welcome to the Pizza Point-of-Sale System. Manage orders, view, manage admin dat
 
 ## Deployment 🌐
 
-We use Jenkins for our CI/CD, ensuring every piece of code gets to production seamlessly. Ensure your Jenkins instance has necessary permissions and configurations.
+I use Jenkins for our CI/CD, ensuring every piece of code gets to production seamlessly. Ensure your Jenkins instance has necessary permissions and configurations.
 
 ## Contributing 🤝
 
