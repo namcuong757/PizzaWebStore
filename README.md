@@ -18,16 +18,17 @@ Welcome to the Pizza Point-of-Sale System. Manage orders, view, manage admin dat
   - **Personal Space:** Every admin has a dedicated info page showing orders they've been handling.
   - **Account Management:** Every admin can edit their profile and delete their account if needed
 - **Order Management:** Efficiently add, delete, or update orders.
-  - All through the power of a seamless REST API connecting front to back.
   
 ## Technology Stack 🛠
 
-- **Front-end:** Angular with TypeScript, HTML, CSS(Boostrap5) crafts our beautiful and responsive UI.
-- **Back-end:** The power combo of Java core and Spring Boot ensures our backend is robust and scalable.
-- **Build Tool:** Maven manages our project's build lifecycle.
-- **Testing:** JUnit ensures our code always runs smoothly.
-- **CI/CD:** Jenkins for seamless integrations and reliable deployments.
-- **Database:** MySQL reliably handles and stores our data.
+- **Front-end:** AngularTS, HTML, CSS(Boostrap5) .
+- **Back-end:** Java core and Spring Boot.
+- **API:** RESTful APIs. 
+- **API Testing:** Postman.
+- **Build Tool:** Maven.
+- **Testing:** JUnit.
+- **CI/CD:** Jenkins .
+- **Database:** MySQL.
 
 ## Getting Started 🚀
 
@@ -48,4 +49,4 @@ Feel free to fork and add your own features or fixes. Pull requests are welcome.
 
 ---
 
-**Developed by Nam Cuong Tran
+**Developed by Nam Cuong Tran**
