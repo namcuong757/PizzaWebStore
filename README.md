@@ -39,7 +39,7 @@ Welcome to the Pizza Point-of-Sale System. Manage orders, view, manage admin dat
 5. Start the Angular development server.
 6. Order a Pizza and enjoy! (Okay, this step is optional)
 
-## Deployment 🌐
+## CI/CD 🌐
 
 I use Jenkins for our CI/CD, ensuring every piece of code gets to production seamlessly. Ensure your Jenkins instance has necessary permissions and configurations.
 
