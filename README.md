@@ -22,7 +22,7 @@ Welcome to the Pizza Point-of-Sale System. Manage orders, view, manage admin dat
 ## Technology Stack 🛠
 
 - **Front-end:** AngularTS, HTML, CSS(Boostrap5) .
-- **Back-end:** Java core, Spring Boot, Hibernate, Spring MVC, Spring IOC.
+- **Back-end:** Java core, Spring Boot, Hibernate, Spring MVC, Spring Data JPA, Hibernate.
 - **API:** RESTful APIs. 
 - **API Testing:** Postman.
 - **Build Tool:** Maven.
