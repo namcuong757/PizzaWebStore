@@ -33,11 +33,12 @@ Welcome to the Pizza Point-of-Sale System. Manage orders, view, manage admin dat
 ## Getting Started 🚀
 
 1. Clone the repo.
-2. Set up the necessary environment variables.
-3. Follow the build instructions for Maven.
-4. Fire up the backend using Java.
-5. Start the Angular development server.
-6. Order a Pizza and enjoy! (Okay, this step is optional)
+2. Set up the database based on the SQL file included
+3. Set up the necessary environment variables.
+4. Follow the build instructions for Maven.
+5. Fire up the backend using Java.
+6. Start the Angular development server.
+7. Order a Pizza and enjoy! (Okay, this step is optional)
 
 ## CI/CD 🌐
 
